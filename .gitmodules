@@ -1,0 +1,3 @@
+[submodule "yum-utils"]
+	path = yum-utils
+	url = git://yum.baseurl.org/yum-utils.git
