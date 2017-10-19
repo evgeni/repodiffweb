@@ -1,5 +1,7 @@
 import sys
 sys.path.append("./yum-utils")
+sys.path.append("/usr/lib/python2.7/site-packages")
+sys.path.append("/usr/lib64/python2.7/site-packages")
 
 from flask import Flask, jsonify, request
 from repodiff import DiffYum
