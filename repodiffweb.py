@@ -48,6 +48,6 @@ def diff():
             if pkg.verGT(oldpkg):
                 result['update'].append({'name': pkg.name, 'version': pkg.ver, 'release': pkg.rel, 'old_version': oldpkg.ver, 'old_release': oldpkg.rel})
             else:
-                result['update'].append({'name': pkg.name, 'version': pkg.ver, 'release': pkg.rel, 'old_version': oldpkg.ver, 'old_release': oldpkg.rel})
+                result['downgrade'].append({'name': pkg.name, 'version': pkg.ver, 'release': pkg.rel, 'old_version': oldpkg.ver, 'old_release': oldpkg.rel})
 
     return jsonify(result)
