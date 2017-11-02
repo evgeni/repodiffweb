@@ -20,8 +20,8 @@ def diff():
     my = DiffYum()
     my.conf.disable_excludes = ['all']
     my.dy_shutdown_all_other_repos()
-    my.dy_archlist = ['src']
-    
+    my.dy_archlist = ['src', '*']
+
     try:
         my.dy_setup_repo('old', old_repo)
     except yum.Errors.RepoError as e:
